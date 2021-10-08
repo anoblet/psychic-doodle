@@ -1,0 +1,31 @@
+{
+  "name": "psychic-doodle",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:anoblet/psychic-doodle.git",
+  "author": "Andrew Noblet <andrewbnoblet@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@vaadin/router": "^1.7.4",
+    "@vaadin/vaadin-app-layout": "^21.0.2",
+    "@vaadin/vaadin-button": "^21.0.2",
+    "@vaadin/vaadin-dialog": "^21.0.2",
+    "@vaadin/vaadin-form-layout": "^21.0.2",
+    "@vaadin/vaadin-grid": "^21.0.2",
+    "@vaadin/vaadin-notification": "^21.0.2",
+    "@vaadin/vaadin-split-layout": "^21.0.2",
+    "@vaadin/vaadin-tabs": "^21.0.2",
+    "@woocommerce/woocommerce-rest-api": "^1.0.1",
+    "lit-element": "^3.0.0",
+    "typescript": "^4.4.3"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@web/dev-server": "^0.1.24",
+    "@web/dev-server-esbuild": "^0.2.14"
+  },
+  "scripts": {
+    "build": "tsc --watch",
+    "start": "wds --esbuild-target es2017 --node-resolve --open --watch"
+  }
+}
